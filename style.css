@@ -126,29 +126,29 @@ nav ul {
 #signup a {
   color: #0065fc;
 }
-.heberge_marseille,
-.activ_marseille {
+.presentation,
+.services {
   width: 50%;
   text-align: center;
   border-bottom: 3px solid #f2f2f2;
   padding: 9px;
   font-size: 15px;
 }
-header nav .heberge_marseille:hover,
-header nav .activ_marseille:hover {
+header nav .presentation:hover,
+header nav .services:hover {
   border-bottom: 3px solid #0065fc;
 }
-header nav .heberge_marseille:hover a,
-header nav .activ-marseille:hover a {
+header nav .presentation:hover a,
+header nav .services:hover a {
   color: #0065fc;
 }
-header nav .heberge_marseille:focus,
-header nav .activ-marseille:focus {
+header nav .presentation:focus,
+header nav .services:focus {
   color: #f2f2f2;
   border-bottom: 3px solid #f2f2f2;
 }
-.heberge_marseille a,
-.activ_marseille a {
+.presentation a,
+.services a {
   color: black;
 }
 
@@ -177,155 +177,6 @@ h1 {
   padding-top: 0%;
   font-size: 0.86em;
   margin: 10px 0px 10px 20px;
-}
-
-/*Formulaire*/
-
-.formulaire_boutons {
-  display: flex;
-  width: 100%;
-  padding: 10px 2px 5px 2px;
-}
-
-/*Boutons*/
-
-.position_button {
-  width: 50px;
-  height: 50px;
-  border: 1px solid #f2f2f2;
-  background: #f2f2f2;
-  text-align: center;
-  color: black;
-  border-radius: 15px 0px 0px 15px;
-  font-size: 15px;
-  cursor: pointer;
-}
-
-.search_button span {
-  display: none;
-}
-
-#search {
-  width: calc(100% - 90px);
-  border: 3px solid #f2f2f2;
-  padding: 0px 0px 0px 20px;
-  font-size: 17px;
-  font-family: "Raleway";
-  font-weight: bold;
-}
-#search::placeholder {
-  color: black;
-}
-
-#search:focus {
-  color: black;
-  border: 3px solid #f2f2f2;
-}
-
-.search_button {
-  width: 50px;
-  height: 50px;
-  border: 1px solid #0065fc;
-  background: #0065fc;
-  text-align: center;
-  color: white;
-  border-radius: 20px;
-  font-size: 15px;
-  margin-left: -20px;
-  cursor: pointer;
-}
-
-/* Part Filtres*/
-
-/*Bloc_Filtres*/
-.filtres_bloc {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
-/*Titre h3*/
-
-.titre_filtre h3 {
-  display: flex;
-  font-family: "Raleway";
-  font-size: 1em;
-  font-weight: 800;
-  margin: 15px 0px 0px 10px;
-}
-
-/*Filtres*/
-
-.button_filters {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-label {
-  border: 2px solid #dedede;
-  display: flex;
-  flex-wrap: wrap;
-  border-radius: 50px;
-  position: relative;
-  z-index: 0;
-  height: 49px;
-  margin: 5px;
-}
-label:active {
-  box-shadow: 0px 0px 10px #0065fc;
-}
-label:hover {
-  box-shadow: 0px 0px 10px #0065fc;
-}
-
-.circle-icon {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  width: 50px;
-  background-color: #deebff;
-  border-radius: 50px;
-  z-index: 150;
-  position: relative;
-  left: -2px;
-  top: -2px;
-}
-.circle-icon:active,
-.circle-icon:hover {
-  box-shadow: 0px 0px 10px #0065fc;
-}
-.checkbox {
-  display: flex;
-  align-items: center;
-  font-size: 0.9em;
-  font-weight: bold;
-  transition: background 0.5s;
-  cursor: pointer;
-  padding: 0 12px;
-}
-
-.fas {
-  color: #0065fc;
-}
-.grey-star {
-  color: #8c8a8a;
-}
-
-#filters:hover {
-  box-shadow: 0px 0px 10px #0065fc;
-}
-
-#filters:focus {
-  box-shadow: 0px 0px 10px #0065fc;
-}
-
-#filters:active {
-  transform: translate(1px, 1px);
 }
 
 /*Information*/
@@ -360,7 +211,7 @@ label:hover {
 /*------------------------------------------------------------------------------------------------------------------------------*/
 /*                                                           Most Popular                                                       */
 /*------------------------------------------------------------------------------------------------------------------------------*/
-#bloc-pop {
+#bloc-competences {
   background-color: #f2f2f2;
   display: flex;
   justify-content: space-between;
@@ -369,7 +220,7 @@ label:hover {
   padding-top: 0px;
   padding-bottom: 10px;
 }
-.bloc_pop {
+.bloc-competences {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
@@ -378,16 +229,16 @@ label:hover {
   margin: 1rem;
   padding: 10px 0px 0px 0px;
 }
-.bloc_pop h2 {
+.bloc-competences h2 {
   font-size: 1em;
   font-weight: 700;
   padding-bottom: 20px;
   width: 100%;
 }
-.bloc_pop .fas {
+.bloc-competences .fas {
   color: black;
 }
-.hotel {
+.competences {
   border-radius: 20px;
   border: 7px solid white;
   background: white;
@@ -399,20 +250,20 @@ label:hover {
   overflow: hidden;
   padding: 0px;
 }
-.hotel {
+.competences {
   transform: translate(1px, -2px);
 }
-.hotel:hover {
+.competences:hover {
   transform: scale(1.05);
 }
-.cadre_pop {
+.cadre-competences {
   display: block;
   width: 100%;
   height: 100%;
   padding-right: 5px;
   border-radius: 10px;
 }
-.cadre_pop img {
+.cadre-competences img {
   display: block;
   width: 100%;
   height: 100%;
@@ -450,7 +301,7 @@ label:hover {
 /*------------------------------------------------------------------------------------------------------------------------------*/
 /*                                                          Hotel                                                               */
 /*------------------------------------------------------------------------------------------------------------------------------*/
-#nom_hebergement_marseille {
+#section_presentation {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -529,7 +380,7 @@ label:hover {
 /*----------------------------------------------------------------------------------------------------------------------------*/
 /*                                                        Activities                                                          */
 /*----------------------------------------------------------------------------------------------------------------------------*/
-#activite_marseille {
+#section_services {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -685,7 +536,7 @@ footer a {
   }
 
   /* Hebergement*/
-  #nom_hebergement_marseille {
+  #section_presentation {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -756,19 +607,19 @@ footer a {
     box-shadow: 0px 0px 10px #0065fc;
   }
   /* Bloc Pop*/
-  .hotel {
+  .competences {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 26%;
   }
-  .cadre_pop {
+  .cadre-competences {
     display: block;
     width: 100%;
     height: 100%;
     border-radius: 10px;
   }
-  .cadre_pop img {
+  .cadre-competences img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -793,7 +644,7 @@ footer a {
   }
 
   /*Hebergement*/
-  #nom_hebergement_marseille {
+  #section_presentation {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -822,7 +673,7 @@ footer a {
     flex-direction: row;
     justify-content: space-around;
   }
-  #activite_marseille {
+  #section_services {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -928,10 +779,10 @@ footer a {
     padding-left: 0;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-between;
   }
-  .heberge_marseille,
-  .activ_marseille {
+  .presentation,
+  .services {
     width: 15%;
     text-align: center;
     border-bottom: none;
@@ -943,35 +794,35 @@ footer a {
     align-items: center;
     padding: 10px 0px 0px 0px;
   }
-  .activ_marseille,
-  .heberge_marseille {
+  .services,
+  .presentation {
     margin: 0px 0px 0px 0px;
     border-top: 3px solid #f2f2f2;
     padding: 40px;
   }
-  header nav .heberge_marseille:hover,
-  header nav .activ_marseille:hover {
+  header nav .presentation:hover,
+  header nav .services:hover {
     border-bottom: none;
     border-top: 3px solid #0065fc;
   }
-  header nav .heberge_marseille:hover a,
-  header nav .activ_marseille:hover a {
+  header nav .presnetation:hover a,
+  header nav .services:hover a {
     color: #0065fc;
   }
-  header nav .heberge_marseille:focus,
-  header nav .activ_marseille:focus {
+  header nav .presentation:focus,
+  header nav .services:focus {
     color: #f2f2f2;
     border-top: 3px solid #f2f2f2;
     border-bottom: none;
   }
   #logo {
     display: flex;
-    width: 65%;
+    width: 160px;
     font-size: 60px;
     font-weight: bold;
     justify-content: flex-start;
     align-items: center;
-    padding: 15px;
+    padding: 25px;
   }
   #signup {
     display: flex;
@@ -997,114 +848,32 @@ footer a {
   li #logo {
     margin: auto;
   }
-  li .heberge_marseille {
+  li .presentation {
     width: 25%;
     display: flex;
   }
-  li .activ_marseille {
+  li .services {
     width: 25%;
     display: flex;
   }
-  /*Barre de Recherche*/
-  #search {
-    max-width: 27%;
-    border: 3px solid #f2f2f2;
-    padding: 0px 0px 0px 20px;
-    font-size: 17px;
-    font-family: "Raleway";
-    font-weight: bold;
-  }
-  .search_button {
-    width: 140px;
-    height: 50px;
-    border: 1px solid #0065fc;
-    background: #0065fc;
-    text-align: center;
-    color: white;
-    border-radius: 0px 20px 20px 0px;
-    font-size: 17px;
-    margin-left: -90px;
-    cursor: pointer;
-  }
-  .search_button span {
-    display: block;
-  }
-  .search_button i {
-    display: none;
-  }
+  
 
   h1 {
     display: block;
-    text-align: start;
+    text-align: center;
     margin-block-start: 10%;
     margin-block-end: 5%;
     font-weight: bold;
     font-size: 1.2em;
-    margin: 20px 20px 5px 20px;
+    margin: 30px 20px 5px 20px;
   }
   .sous_titre {
     padding-top: 0%;
     font-size: 1.02em;
     margin: 10px 0px 10px 20px;
+    text-align: center;
   }
 
-  /* Filtres*/
-  .titre_filtre h3 {
-    display: flex;
-    font-family: "Raleway";
-    font-size: 1.1em;
-    font-weight: 800;
-    margin: 15px 0px 0px 10px;
-  }
-
-  .filtres_bloc {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-  }
-  .checkbox {
-    display: flex;
-    align-items: center;
-    font-size: 1em;
-    font-weight: bold;
-    transition: background 0.5s;
-    cursor: pointer;
-    padding: 0 12px;
-  }
-  .button_filters {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 10px;
-  }
-  label {
-    border: 2px solid #dedede;
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 50px;
-    position: relative;
-    z-index: 0;
-    height: 49px;
-    margin: 8px;
-  }
-  label:active {
-    box-shadow: 0px 0px 10px #0065fc;
-  }
-  label:hover {
-    box-shadow: 0px 0px 10px #0065fc;
-  }
-  .formulaire_boutons {
-    display: flex;
-    width: 100%;
-    padding: 10px 2px 5px 10px;
-  }
-  .circle-icon:active,
-  .circle-icon:hover {
-    box-shadow: 0px 0px 10px #0065fc;
-  }
   .circle_info {
     font-size: 30px;
   }
@@ -1117,7 +886,7 @@ footer a {
     flex-direction: row;
     align-items: flex-start;
   }
-  #bloc-pop {
+  #bloc-competences {
     background-color: #f2f2f2;
     display: flex;
     flex-wrap: wrap;
@@ -1129,7 +898,7 @@ footer a {
     justify-content: space-evenly;
     align-content: center;
   }
-  .bloc_pop {
+  .bloc-competences {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
@@ -1139,28 +908,28 @@ footer a {
     padding: 10px 0px 0px 0px;
     align-items: center;
   }
-  .bloc_pop h2 {
+  .bloc-comptences h2 {
     font-size: 1.2em;
     font-weight: bold;
     padding-bottom: 20px;
     width: 100%;
     padding-top: 13px;
   }
-  .hotel {
+  .competences {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 85%;
     height: 138px;
   }
-  .cadre_pop {
+  .cadre-competences {
     display: block;
     width: 100%;
     height: 100%;
     padding-right: 5px;
     border-radius: 10px;
   }
-  .cadre_pop img {
+  .cadre-competences img {
     display: block;
     width: 100%;
     height: 100%;
@@ -1197,7 +966,7 @@ footer a {
 
   /*Hebergement*/
 
-  #nom_hebergement_marseille {
+  #section_presentation {
     display: flex;
     background-color: #f2f2f2;
     border-radius: 20px;
@@ -1276,7 +1045,7 @@ footer a {
     flex-direction: row;
     justify-content: space-around;
   }
-  #activite_marseille {
+  #section_services {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -1369,7 +1138,7 @@ footer a {
 /* Petits Breakpoints supplémentaires */
 
 @media all and (min-width: 991px) and (max-width: 1072px) {
-  .bloc_pop h2 {
+  .bloc-competences h2 {
     font-size: 0.95em;
     font-weight: bold;
     padding-bottom: 20px;
@@ -1386,7 +1155,7 @@ footer a {
   .circle-icon:hover {
     box-shadow: 0px 0px 10px #0065fc;
   }
-  #bloc-pop {
+  #bloc-competences {
     background-color: #f2f2f2;
     display: flex;
     flex-wrap: wrap;
@@ -1414,33 +1183,18 @@ footer a {
     color: black;
     padding-bottom: 14px;
   }
-  label:active {
-    box-shadow: 0px 0px 10px #0065fc;
-  }
-  label:hover {
-    box-shadow: 0px 0px 10px #0065fc;
-  }
-  .circle-icon:active,
-  .circle-icon:hover {
-    box-shadow: 0px 0px 10px #0065fc;
-  }
 }
 @media all and (min-width: 1073px) {
-  .hotel {
+  .competences {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 85%;
     height: 146px;
   }
-  label:active {
-    box-shadow: 0px 0px 10px #0065fc;
-  }
-  label:hover {
-    box-shadow: 0px 0px 10px #0065fc;
-  }
-  .circle-icon:active,
-  .circle-icon:hover {
-    box-shadow: 0px 0px 10px #0065fc;
-  }
+}
+/*----Changement pour site jorenservices--------*/
+
+#logo{
+height: 80px;
 }

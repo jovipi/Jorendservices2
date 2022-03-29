@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Pour s'adapter au smartphone-->
-    <title>index</title>
+    <title>Jo'rendServices</title>
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/15359b2697.js" crossorigin="anonymous"></script>
 
@@ -24,18 +24,18 @@
                     <!--Logo-->
                     <li id="logo">
                         <a href="">
-                            <img src="img/logo/Reservia.svg" alt="logo site">
+                            <img src="img/image_joservices/logo_jorendservicerond.png" alt="logo site">
                         </a>
                     </li>
                     <li id="signup">
-                        <a href="">S'inscrire</a>
+                        <a href="contact.html">Contact</a>
                     </li>
-                    <li class="heberge_marseille">
-                        <a href="#nom_hebergement_marseille" data-active="true">Hébergements</a>
+                    <li class="presentation">
+                        <a href="#section_presentation" data-active="true">Présentation</a>
 
                     </li>
-                    <li class="activ_marseille">
-                        <a href="#activite_marseille" data-active="true">Activités</a>
+                    <li class="services">
+                        <a href="#section_services" data-active="true">Services</a>
                     </li>
 
                 </ul>
@@ -48,137 +48,64 @@
             <!--Le corps de Header-->
             <div class="title_main">
                 <!--l'entête du corps-->
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p class="sous_titre">En plein centre de ville ou en pleine nature</p>
+                <h1>Jo'rendServices est une agence de petits services informatiques</h1>
+                <p class="sous_titre">pour les entreprises et les particuliers</p>
             </div>
-            <form class="formulaire_boutons" method="POST" action="traitement.php">
-                <!--Bouton de Position-->
-                <button type="button" class="position_button">
-                    <i class="fa fa-map-marker-alt" aria-hidden="true"></i>
-                </button>
-    
-                <!--Zone de Recherche-->
-                <input type="search" name="search_city" id="search" placeholder="Marseille,France" autofocus required />
-    
-                <!--Bouton de recherche-->
-                <button type="button" class="search_button">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                    <span>Rechercher</span>
-                </button>
-    
-            </form>
-            <!--Filtres-->
-            <div class="filtres_bloc">
-                <div class="titre_filtre">
-                    <h3><strong>Filtres</strong></h3>
-                </div>
-                <form class="button_filters" method="POST" action="traitement.php">
-                    <!--Bouton Economique-->
-                    <label>
-                        <span class="circle-icon"><i class="fas fa-money-bill-wave"></i></span>
-                        <span class="checkbox">Économique</span>
-                    </label>
-                    <input type="checkbox" hidden name="button_filtre" id="eco_filtre" />
-                    <!--Bouton Familial-->
-                    <label>
-                        <span class="circle-icon"><i class=" fas fa-child"></i></span>
-                        <span class="checkbox">Familial</span>
-                    </label>
-                    <input type="checkbox" hidden name="button_filtre" id="fami_filtre" />
-                    <!--Bouton Romantique-->
-                    <label>
-                        <span class="circle-icon"><i class="fas fa-heart"></i></span>
-                        <span class="checkbox">Romantique</span>
-                    </label>
-                    <input type="checkbox" hidden name="button_filtre" id="ro_filtre" />
-                    <!--Bouton Animaux autorisés-->
-                    <label>
-                        <span class="circle-icon"><i class=" fas fa-dog"></i></span>
-                        <span class="checkbox">Animaux autorisés</span>
-                    </label>
-                    <input type="checkbox" hidden name="button_filtre" id="anim_filtre" />
-    
-                </form>
-            </div>
-    
             <!--Informations-->
             <div class="info">
                 <span class="circle_info"><i class="fas fa-info circle-info"></i></span>
-                <p>Plus de 500 logements sont disponibles dans cette ville </p>
+                <p>Devis pour tous services demandés</p>
             </div>
         </section>
     </div>
     <div class="container_desktop">
-        <section id="bloc-pop">
-            <div class="bloc_pop">
+        <section id="bloc-competences">
+            <div class="bloc-competences">
                 <!--Aside "les plus populaires"Bloc-->
-                <h2>Les plus populaires</h2>
+                <h2>Mes Compétences</h2>
                 <i class="fas fa-chart-line"></i>
             </div>
     
             <!--Photos Hôtel les Populaires-->
-            <a href="" class="hotel">
-                <span class="cadre_pop">
-                    <img class="hotel_le_soleil" src="img/les_plus_populaires_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel le soleil du matin">
+            <a href="" class="competences">
+                <span class="cadre-competences">
+                    <img class="packoffice" src="img/image_joservices/Packofficerefait.png" alt="pack office">
                 </span>
                 <span class="cadre_text">
-                    <span class="titre_h3">Hôtel le soleil du matin</span>
+                    <span class="titre_h3">Word,Excel et PowerPoint</span>
     
-                    <span class="texte_p"> Nuits à partir de 128€</span>
-    
-                    <span class="etoiles">
-                        <i class="fas fa-star blue-star"></i>
-                        <i class="fas fa-star blue-star"></i>
-                        <i class="fas fa-star blue-star"></i>
-                        <i class="fas fa-star blue-star"></i>
-                        <i class="fas fa-star blue-star"></i>
-                    </span>
+                    <span class="texte_p">Rapport,Tableur et Diaporama</span>
                 </span>
             </a>
     
-            <a href="" class="hotel">
-                <span class="cadre_pop">
-                    <img class="au_coeur_de_leau" src="img/les_plus_populaires_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
-                        alt="Au coeur de l'eau Chambres d'hôtes">
+            <a href="" class="competences">
+                <span class="cadre-competences">
+                    <img class="création_sites_statiques" src="img/image_joservices/Creationsites.png"
+                        alt="création sites statiques">
                 </span>
                 <span class="cadre_text">
-                    <span class="titre_h3">Au coeur de l'eau Chambres d'hôtes</span>
+                    <span class="titre_h3">HTML5,CSS3 et WordPress</span>
     
-                    <span class="texte_p">Nuits à partir de 71€</span>
-    
-                    <span class="etoiles">
-                        <i class="fas fa-star blue-star"></i>
-                        <i class="fas fa-star blue-star"></i>
-                        <i class="fas fa-star blue-star"></i>
-                        <i class="fas fa-star blue-star"></i>
-                        <i class="fas fa-star grey-star"></i>
-                    </span>
+                    <span class="texte_p">Codage et mise en forme dans le logiciel Wordpress</span>
                 </span>
             </a>
-            <a href="" class="hotel">
-                <span class="cadre_pop">
-                    <img class="hotel_tout_bleu" src="img/les_plus_populaires_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hotel tout bleu et blanc">
+            <a href="" class="competences">
+                <span class="cadre-competences">
+                    <img class="création_logo" src="img/image_joservices/logoscrées.png" alt="création logo">
                 </span>
                 <span class="cadre_text">
-                        <span class="titre_h3">Hôtel Tout bleu et Blanc</span>
-                        <span class="texte_p">Nuits à partir de 68€</span>
-                        <span class="etoiles">
-                            <i class="fas fa-star blue-star"></i>
-                            <i class="fas fa-star blue-star"></i>
-                            <i class="fas fa-star blue-star"></i>
-                            <i class="fas fa-star blue-star"></i>
-                            <i class="fas fa-star grey-star"></i>
-                        </span>
+                        <span class="titre_h3">Création de Logos</span>
+                        <span class="texte_p">Pour entreprises MLM</span>
                 </span>
             </a>
         </section>
     <div class="container">
-        <section id="nom_hebergement_marseille">
+        <section id="section_presentation">
             <!--Bloc Section-->
             <div class="bloc_section">
                 <!--Titre de la Section-->
                 <h2>Hébergement à Marseille</h2>
-                    <a href="#nom_hebergement_marseille"></a>
+                    <a href="#section_presentation"></a>
             </div>
                 <!--Photos des etablissements-->
             <a href="" class="etablissement">
@@ -283,11 +210,11 @@
         </section>
     </div>
     </div>
-        <section id="activite_marseille" class="activite_marseille">
+        <section id="section_services" class="section_services">
                 <!--Titre de la Section2-->
         <div class="bloc_section1">
             <h2>Activités à Marseille</h2>
-                <a href="#activite_marseille"></a>
+                <a href="#section_services"></a>
         </div>
         <div class="bloc_section2">
                 <!--Photos des Activités-->
