@@ -170,7 +170,7 @@ h1 {
   font-weight: bold;
   font-size: 1.3em;
   font-weight: bold;
-  margin: 15px 20px 5px 20px;
+  margin: 20px 20px 5px 20px;
 }
 
 .sous_titre {
@@ -190,7 +190,7 @@ h1 {
   padding-top: 2px;
 }
 .info p {
-  padding: 10px;
+  padding: 30px 0px 0px 10px;
   font-size: 0.9em;
 }
 /*Icone information*/
@@ -206,6 +206,10 @@ h1 {
   padding-left: 5px;
   bottom: 10px;
   margin: 20px 0px 20px 20px;
+}
+.circle-info{
+position: relative;
+    top: 10px;
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------*/
@@ -230,7 +234,6 @@ h1 {
   padding: 10px 0px 0px 0px;
 }
 .bloc-competences h2 {
-  font-size: 1em;
   font-weight: 700;
   padding-bottom: 20px;
   width: 100%;
@@ -258,8 +261,6 @@ h1 {
 }
 .cadre-competences {
   display: block;
-  width: 100%;
-  height: 100%;
   padding-right: 5px;
   border-radius: 10px;
 }
@@ -288,18 +289,9 @@ h1 {
   color: black;
   padding: 0px 0px 40px 0px;
 }
-.etoiles {
-  display: block;
-  font-size: 11px;
-}
-.blue-star {
-  color: #0065fc;
-}
-.grey-star {
-  color: #dcd8d8;
-}
+
 /*------------------------------------------------------------------------------------------------------------------------------*/
-/*                                                          Hotel                                                               */
+/*                                                          Présentation                                                             */
 /*------------------------------------------------------------------------------------------------------------------------------*/
 #section_presentation {
   display: flex;
@@ -318,58 +310,49 @@ h1 {
   font-weight: bold;
   padding: 20px 25px 20px 10px;
 }
-.etablissement {
+.biographie {
   display: block;
   border-radius: 20px;
   box-shadow: 0px 0px 10px grey;
   width: 95%;
   margin-bottom: 15px;
 }
-.etablissement:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-}
-.cadre_etablissement {
+
+.cadre_biographie {
   display: block;
   width: 100%;
   height: 120px;
   padding: 5px;
 }
-.cadre_etablissement img {
+.cadre_biographie img {
   display: block;
   width: 100%;
   height: 100%;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
-.etablissement_cadre_text {
+.biographie_cadre_text {
   display: block;
   text-align: start;
   padding: 5px 10px 5px 10px;
 }
-.etablissement_cadre_text .titre_h3 {
+.biographie_cadre_text .titre_h3 {
   display: block;
-  width: 100%;
-  text-align: start;
-  font-size: 0.95em;
-  color: black;
-  font-weight: 800;
-  padding: 0px 0px 0px 10px;
+    width: 100%;
+    text-align: start;
+    font-size: 1.3em;
+    color: black;
+    font-weight: 800;
+    padding: 10px 0px 10px 0px;
 }
-.etablissement_cadre_text .texte_p {
+.biographie_cadre_text .texte_p {
   display: block;
   font-size: 0.8em;
   color: black;
   padding: 3px 0px 5px 10px;
 }
-.etoile_etablissement {
-  font-size: 11px;
-  padding: 0px 0px 0px 10px;
-}
-.grey-star {
-  color: #dcd8d8;
-}
-.affiche_plus {
+
+.en_savoir_plus{
   width: 100%;
   position: relative;
   font-weight: bold;
@@ -378,20 +361,20 @@ h1 {
   padding: 10px 2px 40px 10px;
 }
 /*----------------------------------------------------------------------------------------------------------------------------*/
-/*                                                        Activities                                                          */
+/*                                                        Services                                                        */
 /*----------------------------------------------------------------------------------------------------------------------------*/
 #section_services {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 0px;
   width: 100%;
 }
 .bloc_section1 h2 {
   font-size: 1.2em;
   font-weight: bold;
-  padding: 10px 90px 10px 0px;
+  padding: 10px 90px 10px 20px;
 }
 
 .bloc_section2 {
@@ -403,7 +386,7 @@ h1 {
   margin: 0px 5px 0px 5px;
 }
 
-.activities {
+.supports {
   display: block;
   border-radius: 35px;
   box-shadow: 0px 0px 0px grey;
@@ -423,17 +406,17 @@ h1 {
 .carte_4 {
   width: 100%;
 }
-.cadre_activites {
+.cadre_supports {
   display: block;
   width: 100%;
   height: 170px;
   border-radius: 20px;
   box-shadow: 0px 0px 10px grey;
 }
-.cadre_activites {
+.cadre_supports {
   transform: translate(1px, -2px);
 }
-.cadre_activites img {
+.cadre_supports img {
   display: block;
   width: 100%;
   height: 125px;
@@ -447,18 +430,18 @@ img .img1 {
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
-.cadre_activites .titre_h4 {
+.cadre_supports .titre_h4 {
   display: block;
-  font-size: 0.7em;
+  font-size: 0.65em;
   font-weight: 800;
   color: black;
   padding: 15px;
 }
-.cadre_activites:hover {
+.cadre_supports:hover {
   transform: scale(1.05); /* Agrandi les cartes au survol */
 }
-.activities_cards1,
-.activities_cards3 {
+.supports_cards1,
+.supports_cards3 {
   width: 80%;
   height: 200px;
 }
@@ -472,6 +455,7 @@ footer {
 .bloc_footer {
   background: #f2f2f2;
   padding: 1rem 1rem 1.5rem 1rem;
+  text-align: center;
 }
 footer li {
   font-size: 15px;
@@ -509,12 +493,7 @@ footer a {
 
 /* Pour Tablettes minis*/
 @media screen and (min-width: 540px) and (max-width: 735px) {
-  /*Bloc Pop */
-  .etoiles {
-    display: block;
-    font-size: 10px;
-    padding: 5px 0px 0px 0px;
-  }
+  /*Compétences */
   .cadre_text .titre_h3 {
     display: block;
     font-size: 0.9em;
@@ -528,14 +507,8 @@ footer a {
     color: black;
     padding: 5px 0px 50px 0px;
   }
-  label:active {
-    box-shadow: 0px 0px 10px #0065fc;
-  }
-  label:hover {
-    box-shadow: 0px 0px 10px #0065fc;
-  }
 
-  /* Hebergement*/
+  /* Présentation*/
   #section_presentation {
     display: flex;
     align-items: center;
@@ -543,12 +516,12 @@ footer a {
     flex-wrap: wrap;
     width: 100%;
   }
-  .etablissement_cadre_text {
+  .biographie_cadre_text {
     display: block;
     text-align: start;
     padding: 5px 35px 5px 0px;
   }
-  .etablissement_cadre_text .titre_h3 {
+  .biographie_cadre_text .titre_h3 {
     display: block;
     width: 100%;
     text-align: start;
@@ -557,28 +530,22 @@ footer a {
     font-weight: 800;
     padding: 0px 0px 0px 5px;
   }
-  .etablissement_cadre_text .texte_p {
+  .biographie_cadre_text .texte_p {
     display: block;
     font-size: 0.8em;
     color: black;
     padding: 3px 0px 5px 5px;
   }
-  .etoile_etablissement {
-    font-size: 11px;
-    padding: 0px 0px 0px 5px;
-  }
-  .grey-star {
-    color: #dcd8d8;
-  }
-  .etablissement {
+  
+  .biographie {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 40%;
+    width: 92%;
   }
 
-  /* Activités*/
+  /* Services*/
   .bloc_section1 h2 {
     font-size: 1.2em;
     font-weight: bold;
@@ -586,12 +553,16 @@ footer a {
   }
   footer nav {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
 }
 /* Sur tous types de tablettes */
 @media all and (min-width: 736px) and (max-width: 990px) {
   /*Information*/
+  .circle-info{
+    position: relative;
+    top: 10px;
+  }
   .info {
     display: flex;
     padding-top: 30px;
@@ -600,12 +571,7 @@ footer a {
     width: 100%;
     padding-top: 10px;
   }
-  label:active {
-    box-shadow: 0px 0px 10px #0065fc;
-  }
-  label:hover {
-    box-shadow: 0px 0px 10px #0065fc;
-  }
+  
   /* Bloc Pop*/
   .competences {
     display: flex;
@@ -615,8 +581,6 @@ footer a {
   }
   .cadre-competences {
     display: block;
-    width: 100%;
-    height: 100%;
     border-radius: 10px;
   }
   .cadre-competences img {
@@ -639,11 +603,8 @@ footer a {
     font-weight: bold;
     padding: 5px 0px 5px 2px;
   }
-  .grey-star {
-    color: #dcd8d8;
-  }
 
-  /*Hebergement*/
+  /*Présentation*/
   #section_presentation {
     display: flex;
     align-items: center;
@@ -651,19 +612,20 @@ footer a {
     flex-wrap: wrap;
     width: 100%;
   }
-  .etablissement {
+  .biographie {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 30%;
+    width: 92%;
   }
-  .etablissement_cadre_text {
+  .biographie_cadre_text {
     display: block;
     text-align: start;
-    padding: 0px 0px 5px 6px;
+    padding: 20px;
+    line-height: 17px;
   }
-  .affiche_plus {
+  .en_savoir_plus {
     font-size: 1em;
     padding: 2px 2px 20px 10px;
   }
@@ -694,28 +656,31 @@ footer a {
   .carte_4 {
     width: 75%;
   }
-  .cadre_activites {
+  .cadre_supports {
     display: block;
     width: 100%;
     height: 200px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px grey;
   }
-  .cadre_activites.cadre_1 {
+  .cadre_supports.cadre_1 {
     height: 400px;
   }
 
   img.img1 {
-    display: block;
-    width: 100%;
-    height: 350px;
+      display: block;
+      width: 100%;
+      height: 320px;
+      border: 2px solid black;
   }
   img.img4 {
     display: block;
     width: 100%;
-    height: 350px;
+    height: 320px;
+    border: 2px solid black;
+
   }
-  .cadre_activites.cadre_2 {
+  .cadre_supports.cadre_2 {
     height: 185px;
   }
 
@@ -726,7 +691,7 @@ footer a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-content: flex-end;
     align-items: flex-start;
   }
@@ -741,11 +706,11 @@ footer a {
     align-items: flex-start;
     align-content: space-around;
   }
-  .bloc_a_propos {
+  .bloc_contact {
     padding-right: 50px;
     padding-left: 30px;
   }
-  .bloc_nos_hebergements {
+  .bloc_mes_forfaits {
     padding-right: 50px;
   }
   .bloc_assistance {
@@ -878,7 +843,7 @@ footer a {
     font-size: 30px;
   }
 
-  /*Bloc Pop et Hebergement*/
+  /*Bloc compétences*/
   .container_desktop {
     display: flex;
     flex-wrap: nowrap;
@@ -917,15 +882,13 @@ footer a {
   }
   .competences {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 85%;
     height: 138px;
   }
   .cadre-competences {
     display: block;
-    width: 100%;
-    height: 100%;
     padding-right: 5px;
     border-radius: 10px;
   }
@@ -956,15 +919,8 @@ footer a {
     color: black;
     padding-bottom: 48px;
   }
-  .etoiles {
-    display: block;
-    font-size: 10px;
-  }
-  .grey-star {
-    color: #dcd8d8;
-  }
-
-  /*Hebergement*/
+  
+  /*Presentation*/
 
   #section_presentation {
     display: flex;
@@ -982,52 +938,49 @@ footer a {
     font-weight: bold;
     padding: 5px 25px 25px 10px;
   }
-  .etablissement {
+  .biographie {
     display: block;
     border-radius: 20px;
     box-shadow: 0px 0px 10px grey;
-    width: 30%;
-    height: 195px;
+    width: 95%;
+    max-height: 670px;
   }
-  .cadre_etablissement {
+  .cadre_biographie {
     display: block;
     width: 100%;
     height: 120px;
     padding: 5px;
   }
 
-  .cadre_etablissement img {
+  .cadre_biographie img {
     display: block;
     width: 100%;
     height: 100%;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
   }
-  .etablissement_cadre_text {
+  .biographie_cadre_text {
     display: block;
     text-align: start;
     padding: 5px 10px 5px 10px;
   }
-  .etablissement_cadre_text .titre_h3 {
+  .biographie_cadre_text .titre_h3 {
     display: block;
     width: 100%;
     text-align: start;
-    font-size: 0.9em;
+    font-size: 1.3em;
     color: black;
     font-weight: bold;
-    padding-bottom: 2px;
+    padding: 10px 0px 5px 0px;
   }
 
-  .etablissement_cadre_text .texte_p {
+  .biographie_cadre_text .texte_p {
     display: block;
-    font-size: 0.8em;
+    font-size: 0.79em;
     color: black;
-    padding-bottom: 10px;
   }
-  .etoile_etablissement {
-    height: 10px;
-  }
-  .affiche_plus {
+
+  .en_savoir_plus {
     width: 100%;
     position: relative;
     font-weight: bold;
@@ -1066,28 +1019,30 @@ footer a {
   .carte_4 {
     width: 75%;
   }
-  .cadre_activites {
+  .cadre_supports {
     display: block;
     width: 100%;
     height: 200px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px grey;
   }
-  .cadre_activites.cadre_1 {
+  .cadre_supports.cadre_1 {
     height: 400px;
   }
 
   img.img1 {
     display: block;
     width: 100%;
-    height: 350px;
+    height: 320px;
+    border: 2px solid black;
   }
   img.img4 {
     display: block;
     width: 100%;
-    height: 350px;
-  }
-  .cadre_activites.cadre_2 {
+    height: 320px;
+    border: 2px solid black;
+}
+  .cadre_supports.cadre_2 {
     height: 185px;
   }
 
@@ -1124,11 +1079,11 @@ footer a {
     align-items: flex-start;
     align-content: space-around;
   }
-  .bloc_a_propos {
+  .bloc_contact {
     padding-right: 150px;
     padding-left: 30px;
   }
-  .bloc_nos_hebergements {
+  .bloc_mes_forfaits {
     padding-right: 150px;
   }
   .bloc_assistance {
@@ -1192,6 +1147,11 @@ footer a {
     width: 85%;
     height: 146px;
   }
+}
+@media all and (min-width: 1200px){
+.biographie{
+  max-height: 670px;
+}
 }
 /*----Changement pour site jorenservices--------*/
 
