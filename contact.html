@@ -6,6 +6,9 @@
 	<!--Balise qui n'a plus besoin d'être utilisable-, dévaluation par google de l'outil-->
     <meta name="keywords" content="">
 	<!--Suppression de cette balise-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <meta name="description" content="formulaire de contact,Jo'rendServices">
 	<!--Ajout de la description pour le seo-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
@@ -14,158 +17,88 @@
 	<!--CSS NON MINIFIER -->
 	
 	<link rel="stylesheet" type="text/css" href="stylecontact.css">
+	<!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/15359b2697.js" crossorigin="anonymous"></script>
 	
 	<!--Changement d'appelation de la page pour seo-->
     <title>Contact-Jo'rendServices</title>
     
 </head>
 <body>
-<!-- Principal conteneur -->
-<div class="page-container">
+	<div class="container_page">
+    	<header class="header">
+        	<div class="header_main">
+            <!--En-tête-->
+            	<nav class="en_tete">
 
-<!--Ajouts balises sémantique header-->
-<header>
-<!-- bloc-0 -->
-<div class="bloc bgc-white l-bloc " id="bloc-0">
-	<div class="container bloc-sm">
-		<nav class="navbar row">
-			<div class="navbar-header">
-				<!--Modification alt-->
-				<a class="navbar-brand" href="index.html"><img src="img/logo3_27_22616 (1).png" alt="Jo'rendServices logo" height="40" /></a>
-				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-				</button>
-			</div>
-			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
-				<ul class="site-navigation nav navbar-nav">
-					<li>
-						<a href="index.html">Accueil</a>
-					</li>
-					<!--Enlever le surplus de code-->
-					<li>
-						<a href="page2.html">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</div>
-</div>
-</header>
-<!-- bloc-0 END -->
-
-<!--Ajout balise sémantique section-->
-<!-- bloc-6 -->
-<section>
-<div class="bloc bg-repeat bgc-black d-bloc " id="bloc-6">
-	<div class="container bloc-lg-page2 ">
-		<div class="row">
-			<div class="design_page2 col-sm-12_page2 ">
-				<!--Changer le contraste de couleur pour accessibilité , revoir le design-->
-				<h1 class=" text-center hero-bloc-text tc-black">
-					Parlons Présentation !
-				</h1>
-			</div>
-			<div>
-				<p class="p-text text-center mg-lg tight-width-whitespace">
-					Je ravis que vous souhaitiez collaborer avec moi.<br>
-					Parlez-moi de votre projet en complétant le formulaire ci-dessous.
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
-</section>
-<!-- bloc-6 END -->
-
-<!-- bloc-7 -->
-<!--Ajout balise sémantique section-->
-<section>
-<div class="bloc bgc-white l-bloc" id="bloc-7">
-	<h2 class="titre2_page2">Donnez vie à vos projets</h2>
-	<div class="container bloc-lg-formulaire">
-		<div class="row">
-			<div class="col-sm-6 contact-center">
-				<form id="form_1" novalidate>
-					<div class="form-group">
-						<label>
-							Nom
-						</label>
-						<input id="name" class="form-control" required />
-					</div>
-					<div class="form-group">
-						<label>
-							Adresse email
-						</label>
-						<input id="email" class="form-control" type="email" required />
-					</div>
-					<div class="form-group">
-						<label>
-							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+                <!--Entête Menu Navigation-->
+                	<ul>
+                    <!--Logo-->
+                    	<li id="logo">
+							<a href="index.html">
+                            	<img src="img/image_joservices/logo_jorendserviceecrit.png" alt="logo site">
+							</a>
+						</li>
+                    	<li id="signup">
+                        	<a href="contact.html">Contact</a>
+                    	</li>
+                	</ul>
+            	</nav>
+        	</div>
+    	</header>
+		<section>
+			<div class="container_contact">
+				<h2 class="titre2_page2">Donnez vie à vos projets</h2>
+					<div class="formulaire">
+						<form id="form" validate>
+							<label>
+								Nom
+							</label>
+								<input id="name" class="form-control" required /></br>
+							<label>
+								Adresse email
+							</label>
+								<input id="email" class="form-control" type="email" required /></br>
+							<label>
+								Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
+							</label><textarea id="message" class="form" rows="4" cols="50" required></textarea>
+					
+							<button class="bouton_envoyer" aria-label=" ajout au formulaire de contact" type="submit">
+								Envoyer
+							</button>
+						</form>
 					</div> 
-					<!--Sortie pour lecteur ecran accessibilité-->
-					<button class="bloc-button btn btn-lg btn-block cta-hero btn-black" aria-label=" ajout au formulaire de contact" type="submit">
-						Envoyer
-					</button>
-				</form>
+					<div class="coordonnées">
+							<p>
+								joannapineri@gmail.com<br>6,montée des gardanens,13380 Plan de Cuques<br>Ouvert de 9h à 16h, du lundi au vendredi<br>
+							</p>
+					</div>
+					<!-- ScrollToTop Button -->
+							<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"></a>
+				<!-- ScrollToTop Button END-->
 			</div>
-			<div class="col-sm-6">
-				<p>
-					joannapineri@gmail.com<br>6,montée des gardanens,13380 Plan de Cuques<br>Ouvert de 9h à 16h, du lundi au vendredi<br>
-				</p>
+		</section>
+		<!-- Footer -->
+		<footer>
+			<div class="bloc_footer">
+					<div class="paragraphe_de_fin">
+						<p class="text-white">
+							Jo'rendServices-Entreprise de Services informatiques.<br>
+						</p>
+					</div>
+					<div class="liens_reseaux_sociaux">
+						<div class="reseau_sociaux">
+								<a class="social" href="https://www.linkedin.com/in/joanna-pineri-0a5630216/"><span class="fa fa-linkedin"></span></a>
+						</div>
+						<div class="reseau_sociaux">
+								<a class="social" href="https://www.facebook.com/nelmio.commercio"><span class="fa fa-facebook icons"></span></a>
+						</div>
+						<div class="reseau_sociaux">
+								<a class="social" href="https://www.instagram.com/joliment_trouve/?hl=fr"><span class="fa fa-instagram icons"></span></a>
+						</div>
+					</div>
 			</div>
-		</div>
+		</footer>
 	</div>
-</div>
-
-<!-- bloc-7 END -->
-
-<!-- ScrollToTop Button -->
-<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
-<!-- ScrollToTop Button END-->
-</section>
-<!--Ajout balise sémantique footer-->
-<!-- Footer - bloc-8 -->
-<footer>
-<div class="bloc black-background-footer d-bloc" id="bloc-8">
-	<div class="container bloc-sm">
-		<div class="row">
-			<div class="col-sm-12">
-				<p class="text-center white">
-					Jo'rendServices-Entreprise de Services informatiques.<br>
-				</p>
-				<div class="row row-no-gutters social">
-					<div class="col-sm-3">
-						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-</footer>
-<!-- Footer - bloc-8 END -->
-
-</div>
-<!-- Principal conteneur END -->
-    
-
 </body>
 </html>

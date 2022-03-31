@@ -549,7 +549,7 @@ footer a {
   .bloc_section1 h2 {
     font-size: 1.2em;
     font-weight: bold;
-    padding: 10px 320px 10px 0px;
+    padding: 10px 320px 10px 15px;
   }
   footer nav {
     display: flex;
